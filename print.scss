@@ -5,6 +5,15 @@
 $fontPrimary: "Georgia", serif!default;
 $fontSecondary: "Helvetica Neue", sans-serif!default;
 $fontCode: "Menlo", monospace!default;
+
+$baseUnit: 16px!default;
+
+$fontSizes: (
+  base: $baseUnit,
+  h3: 21px,
+  h2: 28px,
+  h1: 37px
+)!default;
  * General adjustments
  */
 

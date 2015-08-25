@@ -103,3 +103,13 @@ pre code {
   white-space: pre-line;
   word-break: break-all;
 }
+
+/**
+ * Blockquotes
+ */
+
+blockquote {
+  font-style: italic;
+  margin-left: 1em;
+  font-size: 21px;
+}

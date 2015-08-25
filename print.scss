@@ -28,3 +28,23 @@ body {
 .unprintable {
   display: none;
 }
+
+/**
+ * Fonts & font sizes
+ */
+
+/* Set fonts and base line-height */
+
+html {
+  font-family: $fontSecondary;
+  line-height: 1.5;
+  color: $colorMain;
+}
+
+ul, ol, p, blockquote {
+  font-family: $fontPrimary;
+}
+
+code {
+  font-family: $fontCode;
+}

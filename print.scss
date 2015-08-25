@@ -62,3 +62,11 @@ ul, ol, p, blockquote {
 code {
   font-family: $fontCode;
 }
+
+/* Set font sizes */
+
+body       { font-size: map-get($fontSizes, base); }
+h1         { font-size: map-get($fontSizes, h1); }
+h2         { font-size: map-get($fontSizes, h2); }
+h3         { font-size: map-get($fontSizes, h3); }
+h4, h5, h6 { font-size: map-get($fontSizes, base); }

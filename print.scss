@@ -139,3 +139,13 @@ a {
     word-break: break-word;
   }
 }
+
+/**
+ * Pagination
+ */
+
+/* Avoid page breaks after headings */
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}

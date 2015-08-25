@@ -83,3 +83,23 @@ h1, h2, h3, h4, h5, h6, ul, ol, p, blockquote, pre {
 h1, h2, h3 {
   margin-top: $baseUnit * 2;
 }
+
+/**
+ * Codeblocks
+ */
+
+code {
+  color: $colorLight;
+  font-size: ceil(map-get($fontSizes, base) / 8 * 7);
+}
+
+pre {
+  border: 1px solid $colorLight;
+  padding: 10px;
+  display: block;
+}
+
+pre code {
+  white-space: pre-line;
+  word-break: break-all;
+}

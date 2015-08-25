@@ -15,3 +15,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* The `.unprintable` class is used to hide
+   elements from print layout. */
+
+.unprintable {
+  display: none;
+}

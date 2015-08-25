@@ -156,3 +156,10 @@ p {
   orphans: 3;
   widows: 2;
 }
+
+/* Avoid page breaks inside and before code blocks */
+
+pre {
+  page-break-before: avoid;
+  page-break-inside: avoid;
+}

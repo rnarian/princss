@@ -8,3 +8,10 @@
   size: auto;
   margin: 20mm;
 }
+
+/* Remove margin/padding from body */
+
+body {
+  margin: 0;
+  padding: 0;
+}

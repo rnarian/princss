@@ -154,6 +154,14 @@ img {
 }
 
 /**
+ * Abbreviations
+ */
+
+abbr[title]:after {
+  content: " [" attr(title) "] ";
+}
+
+/**
  * Links
  */
 

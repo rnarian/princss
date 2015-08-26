@@ -1,6 +1,6 @@
-# 👸 Princss
+# Princss
 
-Princss aims to provide simple print styles to existing projects. Elements such as header, footer, sidebars are simply removed so that only the relevant content is printed.
+👸 Princss aims to provide simple print styles to existing projects. Elements such as header, footer, sidebars are simply removed so that only the relevant content is printed.
 
 ## Usage:
 

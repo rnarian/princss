@@ -162,6 +162,35 @@ abbr[title]:after {
 }
 
 /**
+ * Tables
+ */
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid $colorLight;
+}
+
+th {
+  color: $colorMain;
+  border-bottom: 1px solid $colorMain;
+  font-weight: bold;
+}
+
+td, th {
+  vertical-align: top;
+  width: 100%;
+  padding: ceil($baseUnit/2) $baseUnit;
+}
+
+/**
  * Links
  */
 

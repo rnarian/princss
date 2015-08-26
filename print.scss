@@ -193,3 +193,10 @@ pre {
   page-break-before: avoid;
   page-break-inside: avoid;
 }
+
+hr {
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid $colorLight;
+  margin: 30px 0;
+}

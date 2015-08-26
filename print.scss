@@ -163,7 +163,7 @@ a {
   color: blue;
   &[href^="http://"]:after,
   &[href^="https://"]:after {
-    content: "[" attr(href) "] ";
+    content: "\a0[" attr(href) "] ";
     color: $colorLight;
     font-size: small;
     word-break: break-word;

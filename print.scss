@@ -32,21 +32,21 @@
 
 /* Variables */
 
-$fontPrimary: "Georgia", serif!default;
-$fontSecondary: "Helvetica Neue", sans-serif!default;
-$fontCode: "Menlo", monospace!default;
+$princssFontPrimary: "Georgia", serif!default;
+$princssFontSecondary: "Helvetica Neue", sans-serif!default;
+$princssFontCode: "Menlo", monospace!default;
 
-$baseUnit: 16px!default;
+$princssBaseUnit: 16px!default;
 
-$fontSizes: (
-  base: $baseUnit,
+$princssFontSize: (
+  base: $princssBaseUnit,
   h3: 21px,
   h2: 28px,
   h1: 37px
 )!default;
 
-$colorMain: #000!default;
-$colorLight: #999!default;
+$princssColorMain: #000!default;
+$princssColorLight: #999!default;
 
 /**
  * General adjustments
@@ -80,38 +80,38 @@ body {
 /* Set fonts and base line-height */
 
 html {
-  font-family: $fontSecondary;
+  font-family: $princssFontSecondary;
   line-height: 1.5;
-  color: $colorMain;
+  color: $princssColorMain;
 }
 
 ul, ol, p, blockquote {
-  font-family: $fontPrimary;
+  font-family: $princssFontPrimary;
 }
 
 code {
-  font-family: $fontCode;
+  font-family: $princssFontCode;
 }
 
 /* Set font sizes */
 
-body       { font-size: map-get($fontSizes, base); }
-h1         { font-size: map-get($fontSizes, h1); }
-h2         { font-size: map-get($fontSizes, h2); }
-h3         { font-size: map-get($fontSizes, h3); }
-h4, h5, h6 { font-size: map-get($fontSizes, base); }
+body       { font-size: map-get($princssFontSize, base); }
+h1         { font-size: map-get($princssFontSize, h1); }
+h2         { font-size: map-get($princssFontSize, h2); }
+h3         { font-size: map-get($princssFontSize, h3); }
+h4, h5, h6 { font-size: map-get($princssFontSize, base); }
 
 /* Add bottom margin to common block level elements */
 
 h1, h2, h3, h4, h5, h6, ul, ol, p, blockquote, pre {
-  margin-bottom: $baseUnit;
+  margin-bottom: $princssBaseUnit;
 }
 
 /* Add top space to heading levels 1 - 3 in order
    to make them stand out more */
 
 h1, h2, h3 {
-  margin-top: $baseUnit * 2;
+  margin-top: $princssBaseUnit * 2;
 }
 
 /**
@@ -119,12 +119,12 @@ h1, h2, h3 {
  */
 
 code {
-  color: $colorLight;
-  font-size: ceil(map-get($fontSizes, base) / 8 * 7);
+  color: $princssColorLight;
+  font-size: ceil(map-get($princssFontSize, base) / 8 * 7);
 }
 
 pre {
-  border: 1px solid $colorLight;
+  border: 1px solid $princssColorLight;
   padding: 10px;
   display: block;
 }
@@ -175,19 +175,19 @@ table,
 tr,
 td,
 th {
-  border: 1px solid $colorLight;
+  border: 1px solid $princssColorLight;
 }
 
 th {
-  color: $colorMain;
-  border-bottom: 1px solid $colorMain;
+  color: $princssColorMain;
+  border-bottom: 1px solid $princssColorMain;
   font-weight: bold;
 }
 
 td, th {
   vertical-align: top;
   width: 100%;
-  padding: ceil($baseUnit/2) $baseUnit;
+  padding: ceil($princssBaseUnit/2) $princssBaseUnit;
 }
 
 /**
@@ -201,7 +201,7 @@ a {
   &[href^="http://"]:after,
   &[href^="https://"]:after {
     content: "\a0[" attr(href) "] ";
-    color: $colorLight;
+    color: $princssColorLight;
     font-size: small;
     word-break: break-word;
   }
@@ -234,6 +234,6 @@ pre {
 hr {
   background-color: transparent;
   border: none;
-  border-top: 1px solid $colorLight;
-  margin: $baseUnit*2 0;
+  border-top: 1px solid $princssColorLight;
+  margin: $princssBaseUnit*2 0;
 }

@@ -141,7 +141,7 @@ pre code {
 blockquote {
   font-style: italic;
   margin-left: 1em;
-  font-size: 21px;
+  font-size: map-get($princssFontSize, h3);
 }
 
 /**

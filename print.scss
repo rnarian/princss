@@ -40,6 +40,10 @@ $princssBaseUnit: 16px!default;
 
 $princssFontSize: (
   base: $princssBaseUnit,
+  bigger: 21px,
+  h6: $princssBaseUnit,
+  h5: $princssBaseUnit,
+  h4: $princssBaseUnit,
   h3: 21px,
   h2: 28px,
   h1: 37px
@@ -99,7 +103,9 @@ body       { font-size: map-get($princssFontSize, base); }
 h1         { font-size: map-get($princssFontSize, h1); }
 h2         { font-size: map-get($princssFontSize, h2); }
 h3         { font-size: map-get($princssFontSize, h3); }
-h4, h5, h6 { font-size: map-get($princssFontSize, base); }
+h4         { font-size: map-get($princssFontSize, h4); }
+h5         { font-size: map-get($princssFontSize, h5); }
+h6         { font-size: map-get($princssFontSize, h6); }
 
 /* Add bottom margin to common block level elements */
 
@@ -141,7 +147,7 @@ pre code {
 blockquote {
   font-style: italic;
   margin-left: 1em;
-  font-size: map-get($princssFontSize, h3);
+  font-size: map-get($princssFontSize, bigger);
 }
 
 /**
